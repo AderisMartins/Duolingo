@@ -14,8 +14,8 @@
         <div class="row">
             <div class="col">
                 <h6>{{ instrucao }}</h6>
-                <p>{{ frases[1].fraseEng }}</p>
-
+                <p>{{ frases[2].fraseEng }}</p>
+                <!-- Campo de texto que é colocada a resposta -->
                 <div class="form-group">
                     <textarea class="form-control" rows="3"></textarea>
                   </div>
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col">
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-primary">Verificar</button>
+                        <button type="button" class="btn btn-primary" (click)="ngAlert()">Verificar</button>
                     </div>
             </div>
         </div>
